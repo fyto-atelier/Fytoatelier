@@ -424,6 +424,67 @@ Note: The services offered do not replace medical diagnosis or medical treatment
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <!-- PRIVACY MODAL -->
+<div id="privacyModal" style="
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+">
+
+  <div style="
+  background:white;
+  max-width:800px;
+  margin:5% auto;
+  padding:30px;
+  border-radius:10px;
+  max-height:80%;
+  overflow:auto;
+  position:relative;
+  ">
+
+  <button onclick="closePrivacy()" style="
+  position:absolute;
+  top:10px;
+  right:15px;
+  border:none;
+  background:none;
+  font-size:22px;
+  cursor:pointer;
+  ">×</button>
+
+  <h2>Política de Privacidad</h2>
+
+  <p><strong>Responsable:</strong> Enrico Della Ducata<br>
+  NIE: Z1377819-D<br>
+  Av de Moya 6, 35100 Maspalomas<br>
+  Email: delladucata@icloud.com</p>
+
+  <p>Los datos facilitados por correo electrónico o WhatsApp serán utilizados exclusivamente para la gestión de consultas y citas profesionales.</p>
+
+  <p>Esta web utiliza Google Maps, que puede tratar datos como la dirección IP del usuario.</p>
+
+  <p>El usuario puede ejercer sus derechos enviando un correo electrónico al responsable.</p>
+
+  <p>Puede presentar reclamación ante la Agencia Española de Protección de Datos (AEPD).</p>
+
+  </div>
+</div>
+
+<script>
+function openPrivacy() {
+  document.getElementById("privacyModal").style.display = "block";
+}
+
+function closePrivacy() {
+  document.getElementById("privacyModal").style.display = "none";
+}
+</script>
+
 </body>
 </html>
 <a href="#" onclick="openPrivacy()">Política de Privacidad</a>
