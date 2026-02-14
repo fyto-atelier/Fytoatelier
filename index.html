@@ -1,101 +1,329 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fytō atelier | Holistic Bodywork & Plant Medicine</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fytō atelier | Heilpraktiker & Naturopata graduado | Maspalomas</title>
+  <meta name="description" content="Fytō atelier – Heilpraktiker (Deutschland) & Naturopata graduado (Spanien). Massage, japanische Akupunktur und Phytotherapie in Maspalomas, Gran Canaria." />
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f6f4ef;
-    color: #2e2e2e;
-    line-height: 1.6;
-}
+  <style>
+    :root{
+      --bg:#f6f4ef;
+      --ink:#262626;
+      --muted:#6b6b6b;
+      --panel:#ffffff;
+      --line:#e6e1d8;
+      --accent:#3f4f3f;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+    header{
+      padding:68px 0 30px;
+      text-align:center;
+    }
+    .brand{
+      font-size:44px;
+      letter-spacing:1px;
+      margin:0 0 10px;
+      font-weight:500;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .badges{
+      margin:14px 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .topbar{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      margin:18px 0 0;
+      flex-wrap:wrap;
+    }
+    .langbtn{
+      border:1px solid var(--line);
+      background:var(--panel);
+      padding:8px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:14px;
+    }
+    .langbtn.active{
+      border-color:var(--accent);
+      box-shadow:0 0 0 2px rgba(63,79,63,.10);
+    }
 
-header {
-    text-align: center;
-    padding: 80px 20px;
-}
+    .cta{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:26px 0 0;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:10px;
+      border:1px solid var(--line);
+      background:var(--panel);
+      text-decoration:none;
+      font-weight:500;
+      font-size:15px;
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#fff;
+      border-color:var(--accent);
+    }
 
-h1 {
-    font-size: 42px;
-    letter-spacing: 2px;
-}
+    .section{
+      padding:28px 0;
+    }
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:22px;
+    }
+    h2{
+      font-size:22px;
+      margin:0 0 10px;
+      font-weight:600;
+      letter-spacing:.2px;
+    }
+    p{margin:10px 0}
+    .grid{
+      display:grid;
+      gap:14px;
+      grid-template-columns:1fr;
+    }
+    @media (min-width:900px){
+      .grid.two{grid-template-columns:1fr 1fr;}
+      .grid.three{grid-template-columns:1fr 1fr 1fr;}
+    }
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
 
-.section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #3f4f3f;
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 14px;
-    background-color: #eae7df;
-}
-</style>
+    footer{
+      margin-top:22px;
+      padding:26px 0 44px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .footerlinks a{
+      color:var(--muted);
+      text-decoration:none;
+      border-bottom:1px dotted rgba(0,0,0,.2);
+    }
+    .footerlinks a:hover{color:var(--ink)}
+    .hide{display:none}
+  </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <header>
+      <h1 class="brand">Fytō atelier</h1>
 
-<header>
-<h1>Fytō atelier</h1>
-<p>Holistic Bodywork & Plant Medicine<br>Gran Canaria</p>
-<a class="button" href="mailto:your@email.com">Appointment / Termin</a>
-</header>
+      <!-- DE -->
+      <p class="sub lang lang-de">
+        Heilpraktiker (Deutschland) &amp; Naturopata graduado (Spanien)<br />
+        Massage • Japanische Akupunktur • Phytotherapie<br />
+        Maspalomas, Gran Canaria
+      </p>
 
-<div class="section">
-<h2>About</h2>
-<p>
-Recognised Heilpraktiker (Germany) and Naturopata graduado (Spain).  
-My work combines massage, Japanese acupuncture and phytotherapy within a holistic therapeutic approach.
-</p>
-</div>
+      <!-- EN -->
+      <p class="sub lang lang-en hide">
+        Recognised Heilpraktiker (Germany) &amp; Naturopata graduado (Spain)<br />
+        Massage • Japanese Acupuncture • Phytotherapy<br />
+        Maspalomas, Gran Canaria
+      </p>
 
-<div class="section">
-<h2>Japanese Acupuncture</h2>
-<p>
-A gentle and precise form of meridian therapy using very fine needles, individually adapted to each person.
-</p>
-</div>
+      <div class="topbar" aria-label="Language switcher">
+        <button class="langbtn active" id="btn-de" type="button">Deutsch</button>
+        <button class="langbtn" id="btn-en" type="button">English</button>
+      </div>
 
-<div class="section">
-<h2>Massage</h2>
-<p>
-Therapeutic bodywork to support relaxation, balance and physical wellbeing.
-</p>
-</div>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/491638790649" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="mailto:delladucata@icloud.com">E-Mail</a>
+      </div>
 
-<div class="section">
-<h2>Phytotherapy</h2>
-<p>
-Individualised plant-based support as part of an integrative therapeutic concept.
-</p>
-</div>
+      <!-- optional, short note -->
+      <p class="badges lang lang-de">
+        Termine nach Vereinbarung
+      </p>
+      <p class="badges lang lang-en hide">
+        Appointments by prior arrangement
+      </p>
+    </header>
 
-<footer>
-<p>
-Fytō atelier – Gran Canaria<br>
-Recognised Heilpraktiker (Germany) | Naturopata graduado (Spain)
-</p>
-</footer>
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="card">
+        <h2 class="lang lang-de">Über mich</h2>
+        <h2 class="lang lang-en hide">About</h2>
 
+        <p class="lang lang-de">
+          Ich bin anerkannter Heilpraktiker in Deutschland und als <em>Naturopata graduado</em> in Spanien anerkannt.
+          Meine Arbeit verbindet manuelle Therapie, japanische Akupunktur und Pflanzenheilkunde in einem ganzheitlichen Ansatz.
+        </p>
+        <p class="lang lang-de">
+          Im Mittelpunkt steht der Mensch in seiner individuellen Situation – mit Aufmerksamkeit, Präzision und Respekt.
+        </p>
+
+        <p class="lang lang-en hide">
+          I am a recognised <em>Heilpraktiker</em> (Germany) and acknowledged as <em>Naturopata graduado</em> in Spain.
+          My work combines manual therapy, Japanese acupuncture and phytotherapy within a holistic approach.
+        </p>
+        <p class="lang lang-en hide">
+          The focus is always on the individual – with attention, precision and respect.
+        </p>
+
+        <p class="muted small lang lang-de">
+          Hinweis: Die angebotenen Leistungen ersetzen keine ärztliche Diagnose oder Behandlung.
+        </p>
+        <p class="muted small lang lang-en hide">
+          Note: The services offered do not replace medical diagnosis or medical treatment.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section">
+      <div class="grid three">
+        <div class="card">
+          <h2 class="lang lang-de">Japanische Akupunktur</h2>
+          <h2 class="lang lang-en hide">Japanese Acupuncture</h2>
+
+          <p class="lang lang-de">
+            Eine besonders feine und präzise Form der Meridiantherapie mit sehr dünnen Nadeln – individuell abgestimmt.
+          </p>
+          <p class="lang lang-en hide">
+            A gentle, refined form of meridian therapy using very fine needles – individually adapted.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="lang lang-de">Massage</h2>
+          <h2 class="lang lang-en hide">Massage</h2>
+
+          <p class="lang lang-de">
+            Therapeutische Körperarbeit zur Unterstützung von Entspannung, Beweglichkeit und körperlicher Balance.
+          </p>
+          <p class="lang lang-en hide">
+            Therapeutic bodywork supporting relaxation, mobility and physical balance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="lang lang-de">Phytotherapie</h2>
+          <h2 class="lang lang-en hide">Phytotherapy</h2>
+
+          <p class="lang lang-de">
+            Pflanzenheilkunde als ergänzender Bestandteil eines integrativen therapeutischen Konzepts – individuell besprochen.
+          </p>
+          <p class="lang lang-en hide">
+            Plant-based support integrated into a holistic therapeutic concept – discussed individually.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="card">
+        <h2 class="lang lang-de">Kontakt</h2>
+        <h2 class="lang lang-en hide">Contact</h2>
+
+        <p class="lang lang-de">
+          <strong>Fytō atelier</strong><br/>
+          Av de Moya 6<br/>
+          35100 Maspalomas<br/>
+          Gran Canaria
+        </p>
+
+        <p class="lang lang-en hide">
+          <strong>Fytō atelier</strong><br/>
+          Av de Moya 6<br/>
+          35100 Maspalomas<br/>
+          Gran Canaria
+        </p>
+
+        <p class="lang lang-de">
+          WhatsApp: <a href="https://wa.me/491638790649" target="_blank" rel="noopener">+49 163 8790649</a><br/>
+          E-Mail: <a href="mailto:delladucata@icloud.com">delladucata@icloud.com</a>
+        </p>
+
+        <p class="lang lang-en hide">
+          WhatsApp: <a href="https://wa.me/491638790649" target="_blank" rel="noopener">+49 163 8790649</a><br/>
+          E-mail: <a href="mailto:delladucata@icloud.com">delladucata@icloud.com</a>
+        </p>
+
+        <p class="muted small lang lang-de">
+          (Adresse ab April: Avenida de España 7 – wird dann auf der Website aktualisiert.)
+        </p>
+        <p class="muted small lang lang-en hide">
+          (Address from April: Avenida de España 7 – this will be updated on the website.)
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerlinks">
+        <span class="lang lang-de">
+          <a href="#" onclick="alert('Im nächsten Schritt erstelle ich dir Aviso Legal & Datenschutz als eigene Seiten.'); return false;">Aviso Legal</a>
+          ·
+          <a href="#" onclick="alert('Im nächsten Schritt erstelle ich dir Aviso Legal & Datenschutz als eigene Seiten.'); return false;">Datenschutz</a>
+        </span>
+        <span class="lang lang-en hide">
+          <a href="#" onclick="alert('Next step: I will create proper Aviso Legal & Privacy pages for you.'); return false;">Legal notice</a>
+          ·
+          <a href="#" onclick="alert('Next step: I will create proper Aviso Legal & Privacy pages for you.'); return false;">Privacy</a>
+        </span>
+      </div>
+
+      <p class="muted small" style="margin-top:10px;">
+        © <span id="year"></span> Fytō atelier · Photography: <em>[Name des Fotografen]</em>
+      </p>
+
+      <p class="muted small">
+        Heilpraktiker (Deutschland) · Naturopata graduado (Spanien)
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const btnDe = document.getElementById('btn-de');
+    const btnEn = document.getElementById('btn-en');
+
+    function setLang(lang){
+      document.querySelectorAll('.lang').forEach(el => el.classList.add('hide'));
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.remove('hide'));
+      btnDe.classList.toggle('active', lang === 'de');
+      btnEn.classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+    }
+
+    btnDe.addEventListener('click', () => setLang('de'));
+    btnEn.addEventListener('click', () => setLang('en'));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
