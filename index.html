@@ -466,6 +466,45 @@ Dichos datos pueden ser transferidos a servidores fuera de la Unión Europea.</p
 
 <h2>Derecho a reclamar</h2>
 <p>El usuario puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD).</p>
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background: #222;
+color: white;
+padding: 15px;
+text-align: center;
+font-size: 14px;
+z-index: 9999;
+display: none;
+">
+  Diese Website verwendet Google Maps. Mit der Nutzung stimmen Sie der Datenverarbeitung durch Google zu.
+  <a href="politica-cookies.html" style="color:#ccc; text-decoration: underline;">Mehr erfahren</a>
+  <button onclick="acceptCookies()" style="
+    margin-left: 15px;
+    padding: 6px 14px;
+    border: none;
+    background: #3f4f3f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  ">OK</button>
+</div>
+
+<script>
+function acceptCookies() {
+  localStorage.setItem("cookiesAccepted", "true");
+  document.getElementById("cookie-banner").style.display = "none";
+}
+
+window.onload = function() {
+  if (!localStorage.getItem("cookiesAccepted")) {
+    document.getElementById("cookie-banner").style.display = "block";
+  }
+};
+</script>
 
 </body>
 </html>
