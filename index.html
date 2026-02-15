@@ -429,3 +429,24 @@ Impressum
 </div>
 </body>
 </html>
+<script>
+const btnDe = document.getElementById("btn-de");
+const btnEn = document.getElementById("btn-en");
+
+function setLang(lang){
+  document.querySelectorAll(".lang-de").forEach(el=>{
+    el.style.display = lang === "de" ? "block" : "none";
+  });
+  document.querySelectorAll(".lang-en").forEach(el=>{
+    el.style.display = lang === "en" ? "block" : "none";
+  });
+
+  btnDe.classList.toggle("active", lang === "de");
+  btnEn.classList.toggle("active", lang === "en");
+}
+
+btnDe.addEventListener("click", ()=> setLang("de"));
+btnEn.addEventListener("click", ()=> setLang("en"));
+
+setLang("de");
+</script>
