@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Cookies | Fytō atelier</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f6f4ef;color:#2e2e2e;line-height:1.6}
+    .wrap{max-width:900px;margin:0 auto;padding:28px 18px}
+    .card{background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:18px}
+    a{color:#2e2e2e}
+    .muted{color:#666}
+    h1{margin:0 0 10px}
+    .nav{margin:12px 0 18px;font-size:14px}
+    .nav a{margin-right:14px}
+
+    /* mini cookie banner */
+    #cookieBanner{
+      position:fixed;left:16px;right:16px;bottom:16px;
+      background:#ffffff;border:1px solid #ddd;border-radius:14px;
+      padding:14px 14px;box-shadow:0 10px 30px rgba(0,0,0,.12);
+      display:none;z-index:9999;
+      max-width:900px;margin:0 auto;
+    }
+    #cookieBanner .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+    #cookieBanner button{
+      border:1px solid #2e2e2e;background:#2e2e2e;color:#fff;
+      padding:8px 12px;border-radius:10px;cursor:pointer;font-size:14px
+    }
+    #cookieBanner button.secondary{background:#fff;color:#2e2e2e}
+    #cookieBanner p{margin:0;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <a href="./index.html">← Volver</a>
+      <a href="./aviso-legal.html">Aviso Legal</a>
+      <a href="./politica-privacidad.html">Privacidad</a>
+      <a href="./impressum.html">Impressum</a>
+    </div>
+
+    <div class="card">
+      <h1>Política de Cookies</h1>
+      <p>
+        Esta web utiliza únicamente <strong>cookies técnicas</strong> necesarias para el funcionamiento básico
+        (por ejemplo, recordar tu elección sobre cookies). No se usan cookies de publicidad ni analítica.
+      </p>
+
+      <h2>¿Qué cookies usamos?</h2>
+      <ul>
+        <li><strong>cookie_consent</strong> (localStorage): guarda tu elección (aceptar/rechazar) durante 6 meses.</li>
+      </ul>
+
+      <h2>¿Cómo desactivarlas?</h2>
+      <p>
+        Puedes eliminar cookies desde la configuración de tu navegador. Al hacerlo, es posible que la web olvide
+        tu elección y vuelva a mostrar el aviso.
+      </p>
+    </div>
+  </div>
+
+  <!-- MINI COOKIE BANNER -->
+  <div id="cookieBanner" role="dialog" aria-live="polite">
+    <div class="row">
+      <p>
+        Usamos solo cookies técnicas para que la web funcione.
+        <a href="./politica-cookies.html">Ver política</a>
+      </p>
+      <div class="row" style="justify-content:flex-end;">
+        <button class="secondary" id="cookieReject">Rechazar</button>
+        <button id="cookieAccept">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simple consent (no tracking)
+    const KEY = "cookie_consent";
+    const banner = document.getElementById("cookieBanner");
+
+    function setConsent(value){
+      const data = { value, t: Date.now() };
+      localStorage.setItem(KEY, JSON.stringify(data));
+      banner.style.display = "none";
+    }
+
+    function getConsent(){
+      try{
+        const raw = localStorage.getItem(KEY);
+        if(!raw) return null;
+        const data = JSON.parse(raw);
+        // 6 Monate
+        const sixMonths = 1000*60*60*24*30*6;
+        if(Date.now() - data.t > sixMonths) return null;
+        return data.value;
+      }catch(e){ return null; }
+    }
+
+    if(!getConsent()){
+      banner.style.display = "block";
+    }
+
+    document.getElementById("cookieAccept").addEventListener("click", ()=>setConsent("accepted"));
+    document.getElementById("cookieReject").addEventListener("click", ()=>setConsent("rejected"));
+  </script>
+</body>
+</html>
