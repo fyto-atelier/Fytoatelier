@@ -45,17 +45,27 @@
       margin:18px 0 0;
     }
     .langbtn{
-      border:1px solid var(--line);
-      background:var(--panel);
-      padding:8px 12px;
-      border-radius:999px;
-      cursor:pointer;
-      font-size:14px;
-    }
-    .langbtn.active{
-      border-color:var(--accent);
-      box-shadow:0 0 0 2px rgba(63,79,63,.10);
-    }
+    border:2px solid #6D8E81;
+    background:transparent;
+    color:#E7D2B2;
+    padding:10px 20px;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:15px;
+    transition:all .25s ease;
+}
+
+.langbtn:hover{
+    background:#6D8E81;
+    color:#E7D2B2;
+}
+
+.langbtn.active{
+    background:#6D8E81;
+    color:#E7D2B2;
+    border-color:#6D8E81;
+}
+
     .cta{
       display:flex;
       justify-content:center;
