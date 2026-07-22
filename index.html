@@ -43,7 +43,7 @@ a:hover{
     position:relative;
     display:inline-block;
 } 
-  .brand-wrap::before{
+ .brand-wrap::before{
 content:"";
 position:absolute;
 width:450px;
@@ -55,9 +55,21 @@ transform:translate(-50%,-50%);
 z-index:-1;
 opacity:.85;
 
-/* oben kräftiger, nach unten transparenter */
--webkit-mask-image:linear-gradient(to bottom, black 60%, transparent 100%);
-mask-image:linear-gradient(to bottom, black 60%, transparent 100%);
+-webkit-mask-image:linear-gradient(
+to bottom,
+black 30%,
+rgba(0,0,0,.8) 50%,
+rgba(0,0,0,.35) 75%,
+transparent 100%
+);
+
+mask-image:linear-gradient(
+to bottom,
+black 30%,
+rgba(0,0,0,.8) 50%,
+rgba(0,0,0,.35) 75%,
+transparent 100%
+);
 }
    .brand{
     font-size:64px;
