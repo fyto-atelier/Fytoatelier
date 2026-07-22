@@ -56,21 +56,58 @@ a.button{
 <body>
 
 <div class="container">
-<div style="text-align:center; margin-bottom:40px;">
+  <header class="top">
+     <div class="brand-wrap">
+    <h1 class="brand">Fytō atelier</h1>
+</div>
 
-    <img src="fyto-circle.png" alt="Fytō atelier"
-         style="width:120px; opacity:0.25;">
+      <!-- DE -->
+      <p class="sub lang lang-de">
+        Heilpraktiker (Deutschland) &amp; Naturopata graduado (Spanien)<br>
+        Massage • Japanische Akupunktur • Phytotherapie<br>
+        Maspalomas, Gran Canaria
+      </p>
 
-    <h1 style="margin-top:-80px; color:#d6d8b1;">
-        Fytō atelier
-    </h1>
+      <!-- EN -->
+      <p class="sub lang lang-en hide">
+        Recognised Heilpraktiker (Germany) &amp; Naturopata graduado (Spain)<br>
+        Massage • Japanese Acupuncture • Phytotherapy<br>
+        Maspalomas, Gran Canaria
+      </p>
 
-    <p style="color:#bfc6a5;">
-        Heilpraktiker (Deutschland)<br>
-        Naturopata graduado (Spanien)
-    </p>
+      <div class="langbar" aria-label="Language switcher">
+        <button class="langbtn active" id="btn-de" type="button">Deutsch</button>
+        <button class="langbtn" id="btn-en" type="button">English</button>
+      </div>
+      
+      
+
+<div class="cta">
+
+<a class="btn lang lang-de"
+href="https://wa.me/34600926237"
+target="_blank">
+Termin vereinbaren
+</a>
+
+<a class="btn lang lang-en hide"
+href="https://wa.me/34600926237"
+target="_blank"><
+Book an appointment
+</a>
 
 </div>
+
+<div class="pill lang lang-de">Termine nach Vereinbarung</div>
+
+   
+      <div class="pill lang lang-en hide">Appointments by prior arrangement</div>
+
+      <!-- Optionales Headerbild: nimmt massage1.jpg; verschwindet automatisch, wenn nicht vorhanden -->
+      <div class="hero" style="margin-top:22px">
+        <img src="massage1.jpg" alt="Fytō atelier" onerror="this.closest('.hero').style.display='none'">
+      </div>
+    </header>
 <h1>Japanische Akupunktur</h1>
 
 <p>
