@@ -34,7 +34,47 @@ h2{
 p{
     color:#B7B7B7;
 }
+   .brand-wrap{
+    position:relative;
+    display:inline-block;
+} 
+ .brand-wrap::before{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+background:url("fyto-circle.png") center/contain no-repeat;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+z-index:-1;
+opacity:.85;
 
+-webkit-mask-image:linear-gradient(
+to bottom,
+black 30%,
+rgba(0,0,0,.8) 50%,
+rgba(0,0,0,.35) 75%,
+transparent 100%
+);
+
+mask-image:linear-gradient(
+to bottom,
+black 30%,
+rgba(0,0,0,.8) 50%,
+rgba(0,0,0,.35) 75%,
+transparent 100%
+);
+}
+   .brand{
+    font-size:64px;
+    font-weight:300;
+    letter-spacing:3px;
+    color:#E7D2B2;
+    margin:0 0 24px;
+    text-transform:none;
+    line-height:1.2;
+}
 img{
     width:100%;
     border-radius:16px;
