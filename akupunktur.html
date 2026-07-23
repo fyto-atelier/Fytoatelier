@@ -106,5 +106,28 @@ Ein sanfter Weg, den Körper wieder ins Gleichgewicht zu bringen.
 
 </div>
 
-</body>
+
+<script>
+const btnDe = document.getElementById("btn-de");
+const btnEn = document.getElementById("btn-en");
+
+function setLang(lang){
+  document.querySelectorAll(".lang-de").forEach(el=>{
+    el.style.display = lang === "de" ? "block" : "none";
+  });
+  document.querySelectorAll(".lang-en").forEach(el=>{
+    el.style.display = lang === "en" ? "block" : "none";
+  });
+
+  btnDe.classList.toggle("active", lang === "de");
+  btnEn.classList.toggle("active", lang === "en");
+}
+
+btnDe.addEventListener("click", ()=> setLang("de"));
+btnEn.addEventListener("click", ()=> setLang("en"));
+
+setLang("de");
+   
+</script>
+</body>     
 </html> 
