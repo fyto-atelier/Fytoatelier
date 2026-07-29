@@ -1,1 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalima | Fytō atelier</title>
 
+<style>
+body{
+    margin:0;
+    background:#111716;
+    color:#E7D2B2;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    line-height:1.8;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:60px 24px;
+}
+
+.brand-wrap{
+    position:relative;
+    display:inline-block;
+}
+
+.brand-wrap::before{
+content:"";
+position:absolute;
+width:450px;
+height:450px;
+background:url("fyto-circle.png") center/contain no-repeat;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+z-index:-1;
+opacity:.85;
+
+-webkit-mask-image:linear-gradient(
+to bottom,
+black 30%,
+rgba(0,0,0,.8) 50%,
+rgba(0,0,0,.35) 75%,
+transparent 100%
+);
+
+mask-image:linear-gradient(
+to bottom,
+black 30%,
+rgba(0,0,0,.8) 50%,
+rgba(0,0,0,.35) 75%,
+transparent 100%
+);
+}
+
+.brand{
+font-size:64px;
+font-weight:300;
+letter-spacing:3px;
+margin:0 0 24px;
+}
+
+h1{
+font-size:42px;
+font-weight:300;
+margin-bottom:10px;
+}
+
+h2{
+margin-top:50px;
+font-weight:400;
+}
+
+p{
+color:#B7B7B7;
+}
+
+img{
+width:100%;
+border-radius:16px;
+margin:30px 0;
+}
+
+.langbar{
+margin:30px 0;
+display:flex;
+gap:10px;
+}
+
+.langbtn{
+background:#6D8E81;
+color:white;
+border:none;
+border-radius:999px;
+padding:8px 18px;
+cursor:pointer;
+font-size:15px;
+}
+
+.langbtn.active{
+background:#E7D2B2;
+color:#111716;
+}
+
+.button{
+display:inline-block;
+margin-top:40px;
+padding:12px 24px;
+border-radius:999px;
+background:#6D8E81;
+color:white;
+text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="brand-wrap">
+<h1 class="brand">Fytō atelier</h1>
+</div>
+
+<p class="lang-de">
+Heilpraktiker (Deutschland) &amp; Naturopata graduado (Spanien)<br>
+Massage • Japanische Akupunktur • Phytotherapie<br>
+Maspalomas, Gran Canaria
+</p>
+
+<p class="lang-en" style="display:none;">
+Recognised Heilpraktiker (Germany) &amp; Naturopata graduado (Spain)<br>
+Massage • Japanese Acupuncture • Phytotherapy<br>
+Maspalomas, Gran Canaria
+</p>
+
+<div class="langbar">
+<button class="langbtn active" id="btn-de">Deutsch</button>
+<button class="langbtn" id="btn-en">English</button>
+</div>
+
+<div class="lang-de">
+
+<h1>Kalima – Wenn der Wüstenwind zur Belastung wird</h1>
+
+<p><em>Warum manche Menschen während einer Kalima stärker unter Atemwegsbeschwerden, Müdigkeit oder Kopfschmerzen leiden – und wie Sie Ihren Körper in dieser Zeit unterstützen können.</em></p>
+
+<p><strong>Kurz erklärt</strong></p>
+
+<p>
+Die Kalima ist ein Wetterphänomen, bei dem warme Luftmassen aus der Sahara große Mengen feinen Wüstenstaubs auf die Kanarischen Inseln transportieren. Während dieser Zeit verschlechtert sich häufig die Luftqualität erheblich. Besonders Menschen mit Atemwegserkrankungen können dadurch stärker belastet werden.
+</p>
+
+<p>
+Wer schon einige Zeit auf den Kanarischen Inseln lebt, erkennt die Anzeichen oft sofort: Der Himmel wirkt milchig, die Fernsicht verschwindet und eine feine Staubschicht legt sich auf Autos, Terrassen und Balkone. Dann heißt es oft: <strong>„Heute ist Kalima.“</strong>
+</p>
+
+<p>
+Viele Menschen haben den Eindruck, dass die Kalima heute häufiger auftritt als früher. Wissenschaftliche Untersuchungen zeigen jedoch, dass die Entwicklung komplexer ist. Zwar gab es in den vergangenen Jahren einige besonders intensive Staubereignisse, eine eindeutige langfristige Zunahme der Kalima-Episoden konnte bisher jedoch nicht nachgewiesen werden.
+</p>
+
+<h2>Warum fühlen sich viele Menschen während einer Kalima schlechter?</h2>
+
+<p>
+Während einer Kalima gelangt feiner Saharastaub über den Atlantik bis auf die Kanarischen Inseln. Gleichzeitig steigen häufig die Temperaturen und die Luft wird trockener. Diese Kombination kann den Körper zusätzlich belasten.
+</p>
+
+<p>
+Der feine Staub kann die Schleimhäute und Atemwege reizen. Besonders Menschen mit Asthma, COPD oder anderen Atemwegserkrankungen bemerken in dieser Zeit häufig eine Verschlechterung ihrer Beschwerden.
+</p>
+
+<p>
+Viele Menschen berichten außerdem über gereizte Augen, trockenen Hals, Husten, Müdigkeit oder Kopfschmerzen. Nicht jeder reagiert gleich – manche bemerken kaum Veränderungen, andere sind deutlich empfindlicher.
+</p
+<h2>Wer ist besonders betroffen?</h2>
+
+<p>
+Besonders belastend kann eine Kalima sein für Menschen mit:
+</p>
+
+<ul style="color:#B7B7B7; line-height:2;">
+<li>Asthma</li>
+<li>COPD</li>
+<li>chronischer Bronchitis</li>
+<li>Allergien der Atemwege</li>
+<li>Herz-Kreislauf-Erkrankungen</li>
+<li>ältere Menschen und kleine Kinder</li>
+</ul>
+
+<h2>Was kann man selbst tun?</h2>
+
+<p>
+Während einer Kalima helfen oft schon einfache Maßnahmen. Dazu gehören ausreichend zu trinken, körperliche Anstrengung möglichst zu reduzieren und Aufenthalte im Freien bei starker Kalima zu begrenzen. Auch ein möglichst staubarmes Raumklima kann dazu beitragen, den Körper zu entlasten.
+</p>
+
+<h2>Kann die Naturheilkunde unterstützen?</h2>
+
+<p>
+In meiner Praxis berichten manche Patientinnen und Patienten, dass sich ihre Beschwerden während einer Kalima verstärken. Je nach individueller Situation können naturheilkundliche Verfahren wie die japanische Akupunktur oder die Phytotherapie eine sinnvolle Ergänzung sein. Dabei steht nicht die Kalima selbst im Mittelpunkt, sondern der Mensch mit seinen individuellen Beschwerden und seinem allgemeinen Wohlbefinden.
+</p>
+
+<p>
+Naturheilkundliche Verfahren ersetzen keine notwendige medizinische Behandlung, können den Körper jedoch dabei unterstützen, belastende Phasen besser zu begleiten.
+</p>
+
+<h2>Wann sollte man ärztliche Hilfe suchen?</h2>
+
+<p>
+Bei starker Atemnot, Brustschmerzen oder einer deutlichen Verschlechterung einer bestehenden Erkrankung sollte immer ärztliche Hilfe in Anspruch genommen werden. Dies gilt insbesondere für Menschen mit Asthma, COPD oder anderen chronischen Erkrankungen.
+</p>
+
+<p><strong>Haben Sie Fragen zu diesem Thema?</strong></p>
+
+<p>
+Gerne berate ich Sie persönlich in meiner Praxis in Maspalomas. Gemeinsam besprechen wir, welche naturheilkundlichen Möglichkeiten zu Ihrer individuellen Situation passen.
+</p>
+
+</div>
+
+<div class="lang-en" style="display:none;">
+
+<h1>Calima – When the Desert Wind Becomes a Burden</h1>
+
+<p><em>Why some people experience increased respiratory symptoms, fatigue or headaches during a Calima—and how to support your body during these periods.</em></p>
+
+<p><strong>In brief</strong></p>
+
+<p>
+Calima is a weather phenomenon in which warm air masses from the Sahara carry large amounts of fine desert dust to the Canary Islands. During these episodes, air quality often deteriorates considerably, which can be particularly challenging for people with respiratory diseases.
+</p>
+
+<p>
+Anyone who has lived in the Canary Islands for some time usually recognizes the signs immediately. The sky becomes hazy, visibility decreases and a fine layer of dust settles on cars, terraces and balconies. That's when people often say: "Today we have Calima."
+</p>
+
+<p>
+Many people feel that Calima occurs more frequently today than it did years ago. Scientific studies, however, show that the situation is more complex. While there have been several particularly intense dust events in recent years, a long-term increase in Calima episodes has not yet been clearly demonstrated.
+</p>
+
+<h2>Why do many people feel worse during a Calima?</h2>
+
+<p>
+Fine Saharan dust reaches the Canary Islands during a Calima. At the same time, temperatures often rise and the air becomes much drier. This combination can place additional stress on the body.
+</p>
+
+<p>
+The tiny dust particles may irritate the airways and mucous membranes. People with asthma, COPD or other respiratory diseases often notice that their symptoms temporarily become worse.
+</p>
+
+<p>
+Some people also report irritated eyes, a dry throat, coughing, fatigue or headaches. Not everyone reacts in the same way—while some notice hardly any difference, others are much more sensitive.
+</p>
+
+<h2>Who is particularly affected?</h2>
+
+<ul style="color:#B7B7B7; line-height:2;">
+<li>People with asthma</li>
+<li>COPD</li>
+<li>Chronic bronchitis</li>
+<li>Respiratory allergies</li>
+<li>Cardiovascular diseases</li>
+<li>Older adults and young children</li>
+</ul>
+
+<h2>What can you do yourself?</h2>
+
+<p>
+Simple measures may help during a Calima: drink enough water, reduce physical exertion, limit outdoor activities during severe dust events and try to keep indoor air as free from dust as possible.
+</p>
+
+<h2>Can naturopathic medicine help?</h2>
+
+<p>
+In my practice, some patients report that their symptoms become more noticeable during a Calima. Depending on the individual situation, Japanese acupuncture or phytotherapy may be useful as part of a holistic treatment approach. The focus is always on the individual rather than on the weather phenomenon itself.
+</p>
+
+<p>
+Naturopathic treatments do not replace necessary medical care but may help support the body during particularly demanding periods.
+</p>
+
+<h2>When should you seek medical attention?</h2>
+
+<p>
+If you experience severe shortness of breath, chest pain or a significant worsening of an existing medical condition, you should seek medical attention without delay.
+</p>
+
+<p><strong>Do you have questions about this topic?</strong></p>
+
+<p>
+I would be pleased to welcome you to my practice in Maspalomas. Together we can discuss which naturopathic approaches may be appropriate for your individual situation.
+</p>
+
+</div>
+
+<a class="button" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+const btnDe=document.getElementById("btn-de");
+const btnEn=document.getElementById("btn-en");
+
+function setLang(lang){
+document.querySelector(".lang-de").style.display=lang==="de"?"block":"none";
+document.querySelector(".lang-en").style.display=lang==="en"?"block":"none";
+
+btnDe.classList.toggle("active",lang==="de");
+btnEn.classList.toggle("active",lang==="en");
+}
+
+btnDe.onclick=()=>setLang("de");
+btnEn.onclick=()=>setLang("en");
+
+setLang("de");
+</script>
+
+</body>
+</html>
