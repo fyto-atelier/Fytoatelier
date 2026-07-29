@@ -1,308 +1,50 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japanische Akupunktur | Fytō atelier</title>
+<div class="lang-content lang-de">
 
-<style>
-body{
-    margin:0;
-    background:#111716;
-    color:#E7D2B2;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-    line-height:1.8;
-}
+<h1>Kalima – Wenn der Wüstenwind zur Belastung wird</h1>
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:60px 24px;
-}
+<p><em>Was Saharastaub für Gesundheit und Wohlbefinden bedeuten kann.</em></p>
 
-h1{
-    font-size:42px;
-    font-weight:300;
-    margin-bottom:10px;
-}
+<p>
+Auf den Kanarischen Inseln ist die Kalima ein bekanntes Naturphänomen. Dabei werden feine Staubpartikel aus der Sahara durch warme Ost- oder Südostwinde über den Atlantik bis zu den Inseln transportiert. Die Luft erscheint häufig gelblich oder rötlich, die Sicht nimmt ab und die Belastung durch Feinstaub steigt deutlich an. [oai_citation:0‡Calima Canarias](https://calimacanarias.com/de/was-ist-calima/?utm_source=chatgpt.com)
+</p>
 
-h2{
-    margin-top:50px;
-    color:#E7D2B2;
-}
+<p>
+Viele Menschen empfinden eine Kalima lediglich als unangenehm. Für Personen mit empfindlichen Atemwegen oder bestehenden Lungenerkrankungen kann sie jedoch eine zusätzliche Belastung darstellen. Besonders Menschen mit Asthma oder einer chronisch obstruktiven Lungenerkrankung (COPD), ältere Menschen sowie kleine Kinder reagieren häufig empfindlicher auf die erhöhte Staubkonzentration. [oai_citation:1‡Calima Canarias](https://calimacanarias.com/de/was-ist-calima/?utm_source=chatgpt.com)
+</p>
 
-p{
-    color:#B7B7B7;
-}
-   .brand-wrap{
-    position:relative;
-    display:inline-block;
-} 
- .brand-wrap::before{
-content:"";
-position:absolute;
-width:450px;
-height:450px;
-background:url("fyto-circle.png") center/contain no-repeat;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
-z-index:-1;
-opacity:.85;
+<p>
+Neben den Auswirkungen auf die Atemwege berichten viele Betroffene während einer Kalima über Müdigkeit, Kopfschmerzen, trockene Augen, Halsreizungen oder ein allgemeines Gefühl verminderter Leistungsfähigkeit. Nicht jeder Mensch reagiert gleich stark – Intensität und Dauer der Beschwerden können individuell sehr unterschiedlich sein. [oai_citation:2‡Calima Canarias](https://calimacanarias.com/de/was-ist-calima/?utm_source=chatgpt.com)
+</p>
 
--webkit-mask-image:linear-gradient(
-to bottom,
-black 30%,
-rgba(0,0,0,.8) 50%,
-rgba(0,0,0,.35) 75%,
-transparent 100%
-);
-
-mask-image:linear-gradient(
-to bottom,
-black 30%,
-rgba(0,0,0,.8) 50%,
-rgba(0,0,0,.35) 75%,
-transparent 100%
-);
-}
-   .brand{
-    font-size:64px;
-    font-weight:300;
-    letter-spacing:3px;
-    color:#E7D2B2;
-    margin:0 0 24px;
-    text-transform:none;
-    line-height:1.2;
-}
-img{
-    width:100%;
-    border-radius:16px;
-    margin:30px 0;
-}
-.langbar{
-    margin:30px 0;
-    display:flex;
-    gap:10px;
-}
-
-.langbtn{
-    background:#6D8E81;
-    color:white;
-    border:none;
-    border-radius:999px;
-    padding:8px 18px;
-    font-size:15px;
-    cursor:pointer;
-    transition:0.25s;
-}
-
-.langbtn:hover{
-    background:#86A188;
-}
-
-.langbtn.active{
-    background:#E7D2B2;
-    color:#111716;
-}
-a.button{
-    display:inline-block;
-    margin-top:40px;
-    padding:12px 24px;
-    border-radius:999px;
-    background:#6D8E81;
-    color:white;
-    text-decoration:none;
-}
-</style>
-</head>
-   
-
-<body>
-
-<div class="container">
-  <header class="top">
-     <div class="brand-wrap">
-    <h1 class="brand">Fytō atelier</h1>
-</div>
-
-      <!-- DE -->
-      <p class="sub lang lang-de">
-        Heilpraktiker (Deutschland) &amp; Naturopata graduado (Spanien)<br>
-        Massage • Japanische Akupunktur • Phytotherapie<br>
-        Maspalomas, Gran Canaria
-      </p>
-
-      <!-- EN -->
-      <p class="sub lang lang-en hide">
-        Recognised Heilpraktiker (Germany) &amp; Naturopata graduado (Spain)<br>
-        Massage • Japanese Acupuncture • Phytotherapy<br>
-        Maspalomas, Gran Canaria
-      </p>
-
-      <div class="langbar" aria-label="Language switcher">
-        <button class="langbtn active" id="btn-de" type="button">Deutsch</button>
-        <button class="langbtn" id="btn-en" type="button">English</button>
-      </div>
-      
-      
-
-
-
-      <!-- Optionales Headerbild: nimmt massage1.jpg; verschwindet automatisch, wenn nicht vorhanden -->
-      <div class="hero" style="margin-top:22px">
-        <img src="massage1.jpg" alt="Fytō atelier" onerror="this.closest('.hero').style.display='none'">
-      </div>
-    </header>
-
-   <div class="lang-content lang-de">
-    <h1>Wie ich mit japanischer Akupunktur arbeite</h1>
-    <p><em>Ein sanfter Weg, den Körper wieder ins Gleichgewicht zu bringen.</em></p>
-
-    <p>
-        Als Heilpraktiker habe ich mich bewusst für die japanische Akupunktur nach Dr. Manaka entschieden.
-        Mich überzeugt vor allem ihre sanfte und zugleich sehr präzise Arbeitsweise. Die besonders feinen
-        Nadeln werden von den meisten Menschen als angenehm empfunden und ermöglichen eine Behandlung,
-        die individuell auf den Menschen abgestimmt ist.
-    </p>
-
-    <p>
-        Ein weiterer Grund für meine Entscheidung ist, dass ich mit dieser Methode in meiner täglichen
-        Praxis sehr gute Erfahrungen gemacht habe. Durch die Kombination aus sorgfältiger Diagnostik
-        und einer individuell angepassten Behandlung lassen sich häufig nachhaltige Veränderungen
-        erreichen. Deshalb ist die japanische Akupunktur heute die wichtigste therapeutische Methode
-        in meiner Praxis.
-    </p>
-
-    <p>
-        Jede Behandlung beginnt mit einem ausführlichen Gespräch. Dabei interessieren mich nicht nur
-        Ihre aktuellen Beschwerden, sondern auch Ihre gesundheitliche Vorgeschichte und Ihr allgemeines
-        Wohlbefinden. Anschließend folgt die japanische Bauchdiagnostik – das sogenannte Fukushin.
-        Sie liefert wichtige Hinweise und hilft mir, die Behandlung individuell auf Ihren Körper
-        abzustimmen.
-    </p>
-
-    <p>
-        Während der Behandlung überprüfe ich immer wieder die Reaktion des Körpers und passe die
-        ausgewählten Akupunkturpunkte bei Bedarf direkt an. So entsteht keine Behandlung nach einem
-        festen Schema, sondern eine Therapie, die sich an Ihrem Körper und Ihren Bedürfnissen orientiert.
-    </p>
-
-    <p>
-        Je nach Situation ergänze ich die Akupunktur durch Moxatherapie oder andere sanfte Techniken.
-        Nicht jede Behandlung benötigt viele Nadeln – manchmal reichen wenige gezielte Reize aus,
-        um den Körper in seiner Regulation zu unterstützen.
-    </p>
-
-    <p>
-        Viele Patientinnen und Patienten berichten bereits während der Behandlung von einer angenehmen
-        Wärme, einem Gefühl tiefer Entspannung oder einer spürbaren inneren Ruhe. Andere bemerken die
-        Veränderungen erst in den Stunden oder Tagen danach. Deshalb empfehle ich, sich nach der
-        Behandlung etwas Zeit zu nehmen, ausreichend Wasser zu trinken und dem Körper die Möglichkeit
-        zu geben, den begonnenen Regulationsprozess fortzusetzen.
-    </p>
-
-    <p>
-        Für mich bedeutet japanische Akupunktur weit mehr als das Setzen von Nadeln. Sie ist eine ruhige,
-        präzise und individuelle Therapieform, bei der nicht nur einzelne Beschwerden im Mittelpunkt
-        stehen, sondern der Mensch als Ganzes. Mein Ziel ist es, Ihren Körper dabei zu unterstützen,
-        sein natürliches Gleichgewicht wiederzufinden – auf eine sanfte, respektvolle und individuell
-        abgestimmte Weise.
-    </p>
+<p>
+In diesem Artikel erfahren Sie, welche Auswirkungen Kalima auf den Körper haben kann, welche Personengruppen besonders vorsichtig sein sollten und welche allgemeinen Maßnahmen helfen können, die Belastung während einer Staubepisode möglichst gering zu halten.
+</p>
 
 </div>
 
-<!-- English -->
 <div class="lang-content lang-en" style="display:none;">
 
-    <h1>How I Practice Japanese Acupuncture</h1>
-    <p><em>A gentle way to help restore the body's natural balance.</em></p>
+<h1>Kalima – When the Desert Wind Becomes a Challenge</h1>
 
-    <p>
-        As a naturopathic practitioner, I consciously chose to specialize in Japanese acupuncture
-        according to Dr. Manaka. What impresses me most is its gentle yet highly precise approach.
-        The needles are exceptionally fine, and most patients find the treatment very comfortable,
-        allowing each session to be carefully tailored to the individual.
-    </p>
+<p><em>How Saharan dust may affect health and well-being.</em></p>
 
-    <p>
-        Another reason for choosing this method is the positive experience I have gained with it in
-        my daily practice. By combining careful diagnosis with an individually adapted treatment plan,
-        it is often possible to achieve lasting improvements. For this reason, Japanese acupuncture
-        has become the central therapeutic method in my practice.
-    </p>
+<p>
+Kalima is a well-known natural phenomenon in the Canary Islands. During these events, fine dust particles from the Sahara Desert are carried by warm easterly or south-easterly winds across the Atlantic to the islands. The sky often appears hazy or orange, visibility decreases and airborne particulate levels rise significantly. [oai_citation:3‡Calima Canarias](https://calimacanarias.com/en/what-is-calima/?utm_source=chatgpt.com)
+</p>
 
-    <p>
-        Every treatment begins with a detailed consultation. I am interested not only in your current
-        symptoms, but also in your medical history and your overall well-being. This is followed by
-        the Japanese abdominal diagnosis known as <em>Fukushin</em>, which provides valuable information
-        and helps me tailor the treatment specifically to your body's needs.
-    </p>
+<p>
+While many people experience Kalima merely as an inconvenience, it can place additional strain on individuals with sensitive airways or existing lung disease. People with asthma, chronic obstructive pulmonary disease (COPD), older adults and young children are often more susceptible to the effects of increased airborne dust. [oai_citation:4‡Calima Canarias](https://calimacanarias.com/en/what-is-calima/?utm_source=chatgpt.com)
+</p>
 
-    <p>
-        Throughout the treatment I continuously assess how your body responds and, if necessary,
-        adjust the acupuncture points accordingly. Rather than following a fixed protocol, every
-        treatment evolves according to your individual condition and response.
-    </p>
+<p>
+Besides respiratory symptoms, many people report fatigue, headaches, dry eyes, throat irritation and a general feeling of reduced well-being during Kalima episodes. The severity of symptoms varies considerably from person to person.
+</p>
 
-    <p>
-        Depending on your needs, I may also combine acupuncture with moxibustion or other gentle
-        therapeutic techniques. Not every treatment requires many needles—sometimes only a few
-        carefully chosen stimuli are enough to support the body's natural self-regulation.
-    </p>
-
-    <p>
-        Many patients describe a pleasant feeling of warmth, deep relaxation or inner calm during
-        the treatment itself. Others notice changes over the following hours or days. For this reason,
-        I recommend drinking plenty of water afterwards and allowing yourself some time to rest so
-        your body can continue its natural healing process.
-    </p>
-
-    <p>
-        For me, Japanese acupuncture is much more than simply inserting needles. It is a calm,
-        precise and highly individualized form of therapy that focuses not only on specific symptoms
-        but on the person as a whole. My goal is to support your body in restoring its natural balance
-        in a gentle, respectful and individually tailored way.
-    </p>
+<p>
+This article explains how Kalima may affect the body, who should take particular care and which practical measures may help reduce exposure during periods of Saharan dust.
+</p>
 
 </div>
-<a class="button" href="index.html">
-← Zurück zur Startseite
-</a>
-
-</div>
-
-
-<script>
-const btnDe = document.getElementById("btn-de");
-const btnEn = document.getElementById("btn-en");
-
-function setLang(lang){
-  document.querySelectorAll(".lang-de").forEach(el=>{
-    el.style.display = lang === "de" ? "block" : "none";
-  });
-  document.querySelectorAll(".lang-en").forEach(el=>{
-    el.style.display = lang === "en" ? "block" : "none";
-  });
-
-  btnDe.classList.toggle("active", lang === "de");
-  btnEn.classList.toggle("active", lang === "en");
-}
-
-btnDe.addEventListener("click", ()=> setLang("de"));
-btnEn.addEventListener("click", ()=> setLang("en"));
-
-setLang("de");
-   
-</script>
-</body>     
-</html> 
-<!-- ======================= -->
-<!-- DEUTSCH -->
-<!-- Teil 2 -->
-<!-- ======================= -->
-
-<div class="lang-de">
 
 <h2>Auswirkungen auf die Atemwege</h2>
 
