@@ -1,3 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>Kalima – Wenn der Wüstenwind zur Belastung wird</h1>
+
+<style>
+body{
+    margin:0;
+    background:#111716;
+    color:#E7D2B2;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    line-height:1.8;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:60px 24px;
+}
+
+h1{
+    font-size:42px;
+    font-weight:300;
+    margin-bottom:10px;
+}
+
+h2{
+    margin-top:50px;
+    color:#E7D2B2;
+}
+
+p{
+    color:#B7B7B7;
+}
+
+.brand-wrap{
+    position:relative;
+    display:inline-block;
+}
+
+.brand-wrap::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:url("fyto-circle.png") center/contain no-repeat;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+    opacity:.85;
+
+    -webkit-mask-image:linear-gradient(
+        to bottom,
+        black 30%,
+        rgba(0,0,0,.8) 50%,
+        rgba(0,0,0,.35) 75%,
+        transparent 100%
+    );
+
+    mask-image:linear-gradient(
+        to bottom,
+        black 30%,
+        rgba(0,0,0,.8) 50%,
+        rgba(0,0,0,.35) 75%,
+        transparent 100%
+    );
+}
+
+.brand{
+    font-size:64px;
+    font-weight:300;
+    letter-spacing:3px;
+    color:#E7D2B2;
+    margin:0 0 24px;
+    text-transform:none;
+    line-height:1.2;
+}
+
+img{
+    width:100%;
+    border-radius:16px;
+    margin:30px 0;
+}
+
+.langbar{
+    margin:30px 0;
+    display:flex;
+    gap:10px;
+}
+
+.langbtn{
+    background:#6D8E81;
+    color:white;
+    border:none;
+    border-radius:999px;
+    padding:8px 18px;
+    font-size:15px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.langbtn:hover{
+    background:#86A188;
+}
+
+.langbtn.active{
+    background:#E7D2B2;
+    color:#111716;
+}
+
+a.button{
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 24px;
+    border-radius:999px;
+    background:#6D8E81;
+    color:white;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="top">
+
+<div class="brand-wrap">
+<h1 class="brand">Fytō atelier</h1>
+</div>
 <div class="lang-content lang-de">
 
 <h1>Kalima – Wenn der Wüstenwind zur Belastung wird</h1>
